@@ -1,0 +1,935 @@
+
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,700;1,300&family=Playfair+Display:wght@400;600&family=Raleway:ital,wght@0,300;0,500;1,300;1,700&display=swap');
+
+
+:root {
+    /* Cores */
+    --Azul-escuro: #001F3F;
+    --Cinza-azulado:  #2C3E50;
+    --Bege-claro: #ECF0F1;
+    --Verde-oliva: #738F40;
+    --Cinza-escuro: #3f3f40;
+
+    /* Fontes */
+    --Playfair-Display: 'Lora', serif;
+    --Montserrat: 'Montserrat', sans-serif;
+    --Lora: 'Playfair Display', serif;
+    --Raleway: 'Raleway', sans-serif;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    
+}
+
+
+
+p {
+    font-size: 1.2rem;
+}
+
+
+
+
+
+.geral-txt-p {
+    font-size: 1.4rem;
+}
+
+
+
+
+/* 01 - MENU */
+#nav {
+    display: flex;
+    max-width: 100vw;
+    height: 5rem;
+    background-color: var(--Azul-escuro);
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.nav-logo {
+    color: white;
+    margin-left: 7rem;
+    font-family: var(--Raleway);
+    
+}
+
+.nav-servicos {
+    margin-right: 7rem;
+    font-size: 1.2rem;
+    font-family: var(--Raleway);
+}
+
+a {
+    color: white;
+}
+
+ul {
+    display: flex;
+}
+
+li + li {
+    margin-left: 2rem;
+}
+
+a:hover {
+    color: #ebebeb;
+    transition: 0.5s;
+}
+
+
+
+/* 02 - Sobre Nós */
+#container-sobre {
+    max-width: 100vw;
+    /* border: 1px solid black; */
+    /* height: 75rem; */
+}
+
+.container-CIMA-sobre-nos {
+    display: flex;
+    /* padding: 0 5rem; */
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 100vw;
+    border-bottom: 1px solid rgba(167, 167, 167, 0.226);
+    padding: 0 2.5rem;
+    margin-top: 5rem;
+    /* border: 1px solid rgb(235, 0, 0); */
+} 
+
+.conteudo-txt-sobre {
+    width: 37rem;
+    /* border: 1px solid rgb(235, 0, 0); */
+    margin: 6rem 0;
+}
+
+.conteudo-txt-sobre h1{
+    font-family: var(--Raleway);
+    /* font-weight: var(--Peso-Raleway-700) ; */
+    font-weight: bold;
+    font-size: 3.7rem;
+    margin-bottom: -.4rem;
+}
+
+.conteudo-txt-sobre h3 {
+    font-family: var(--Montserrat);
+    font-weight: var(--Peso-Montserrat-300);
+    font-style: italic;
+    color: #324e69;
+    margin-bottom: 1.4rem;
+    border-bottom: 1px solid rgba(167, 167, 167, 0.226);
+    width: 10rem;
+
+}
+
+.conteudo-txt-sobre p {
+    font-family: var(--Montserrat);
+    font-weight: var(--Peso-Montserrat-30000);
+}
+
+.conteudo-img-sobre {
+    /* border: 1px solid var(--Cinza-escuro); */
+    background-image: url(01-Imagens/02-img-sobre-nos.jpg);
+    width: 22rem;
+    height: 30rem;
+    padding-left: 12rem;
+    padding-top: 1rem;
+    background-position: center top;
+    background-size: cover;
+    margin-bottom: 8rem;   
+}
+
+/* 02 - Sobre Nós - BAIXO */
+.container-BAIXO-sobre-nos {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100vw;
+    padding: 2rem;
+    justify-content: center;
+    margin-top: 2rem;
+    gap: 0.1rem 2rem;
+}
+
+.geral-caixas-sobre {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 23.7rem;
+    height: 17rem;
+    padding: 2rem 3rem;
+    margin: 1rem;
+    box-shadow: 10px 10px 1px var(--Bege-claro);
+    border-radius: 15px;
+    background-color: #3f3f40;
+    
+}
+
+.container-num-e-titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 1rem; */
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #696c6d;
+    padding-bottom: 0.5rem;
+    /* border: 3px solid #000; */
+}
+
+.num-sobre {
+    font-family: var(--Montserrat);
+    font-weight: bold;
+    color: var(--Azul-escuro);
+    font-size: 3.2rem;
+    margin-right: 1.7rem;
+    color: #738F40;
+}
+
+.titulo-sobre {
+    font-family: var(--Raleway);
+    color: #001F3F;
+    width: 25rem; 
+    /* border: 3px solid #000; */
+    color: #fff;
+}
+
+.paragrafo-sobre {
+    width: 24rem;
+    font-family: var(--Montserrat);
+    color: #ebebeb;
+    width: 24rem; 
+    /* border: 1px solid black; */
+
+}
+
+/* 03 Serviços de Arquitetura  */
+#container-servios-arquitetura {
+    display: flex;
+    max-width: 100vw;
+    align-items: center;
+    /* border: 1px solid black; */
+    flex-direction: column;
+    margin-top: 5rem;
+}
+
+#container-servios-arquitetura h2 {
+    font-size: 3rem;
+    margin-top: 3rem ;
+    margin-bottom: 8rem ;
+    font-family: var(--Raleway);
+}
+
+#container-pai-itens-servicos {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container-de-itens-servicos  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.116);
+    border-radius: 10px ;
+    box-shadow: 0px 7px 10px rgba(75, 75, 75, 0.089);
+    max-width: 19.5rem;
+    height: 25rem;
+    margin-bottom: 6rem;
+}
+
+.container-de-itens-servicos:hover {
+    border: 1px solid #001F3F;
+    border-radius: 10px ;
+    box-shadow: 1px 7px 10px #3f3f402c;
+    transition: 0.9s ease-out;
+    background-color: #5e5e5f07; 
+}
+
+.container-de-itens-servicos img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 2.8rem;
+    border-bottom: 2px solid #738F40;
+    padding-bottom: 2rem;
+    /* padding-top: 1.5rem; */
+    margin-top: -5rem;  
+}
+
+.container-de-itens-servicos h3 {
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    font-family: var(--Raleway);
+    height: 4rem;
+    /* border: 1px solid black; */
+    text-align: center;
+    display: flex;
+    align-items: center;
+    color: #001F3F;
+}
+
+
+.container-de-itens-servicos p {
+    font-family: var(--Montserrat);
+    text-align: center;
+}
+
+
+/* 5 Predio - respiro */
+#respiro {
+    max-width: 100vw;
+    margin: 2rem 0;
+    /* border: 1px solid black; */
+    margin-top: 2rem;
+    margin-bottom: 7rem;
+}
+
+#respiro img {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+/* 5 Portifolio */
+#container-portifolio {
+    display: flex;
+    max-width: 100vw;
+    height: 147rem;
+    flex-direction: column;
+    border: 1px solid black;
+    align-content: center;
+}
+
+#container-portifolio h2 {
+    margin-top: 3rem;
+    font-size: 3rem;
+    font-family: var(--Lora);
+    text-align: center;
+    margin-bottom: 3.5rem;
+}
+
+#grid-portifolio {
+    border: 1px solid rgb(245, 2, 2);
+    max-width: 100vw;
+    height: 120rem;
+    display: grid;
+    grid-template-areas: 
+    "img-01 img-02 img-02"
+    "img-01 img-02 img-02"
+    "img-03 img-03 img-04"
+    "img-03 img-03 img-04"
+    "img-05 img-05 img-06"
+    "img-07 img-07 img-07"
+    "img-07 img-07 img-07"
+    ;
+    gap: 7px;
+    overflow: hidden;
+    padding: 0 10rem;
+
+}
+
+.color-grid {
+    /* margin: 5px; */
+	/* background: tomato; */
+    border: 1px solid rgb(245, 2, 2);
+
+}
+
+.img-01 {
+    grid-area: img-01;
+    background-image: url(01-Imagens/05-Portfolio/img-01.jpg) center / cover no-repeat;
+    background-size: cover;
+    background-position: center center;
+    overflow: hidden;
+    max-width: auto;
+    max-height: auto;
+}
+
+.img-02 {
+    grid-area: img-02;
+}
+
+.img-03 {
+    grid-area: img-03;
+}
+
+.img-04 {
+    grid-area: img-04;
+}
+
+.img-05 {
+    grid-area: img-05;
+}
+
+.img-06 {
+    grid-area: img-06;
+}
+
+.img-07 {
+    grid-area: img-07;
+}
+
+
+/* 6 Processo Criativo */
+
+#container-processo-criativo {
+    display: flex;
+    max-width: 100vw;
+    /* height: 120rem; */
+    /* border: 1px solid black; */
+    padding: 0 10rem;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--Cinza-escuro);
+
+}
+
+#container-processo-criativo h2 {
+    font-size: 3rem;
+    font-family: var(--Raleway);
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+#container-processo-criativo > p {
+    color: white;
+    margin-top: 4rem;
+    margin-bottom: 7rem;
+    font-style: italic;
+    font-size: 1.5rem;
+    width: 62rem;
+    /* border: 1px solid black; */
+    font-family: var(--Raleway);
+    /* font-weight: 800; */
+    text-align: center;
+
+}
+
+#container-processo-criativo span {
+    font-size: 1.5rem;
+    font-family: var(--Raleway);
+    color: white;
+    margin-bottom: 6rem;
+    border-bottom: 2px solid #738F40;
+    padding-bottom: 7px;
+    text-align: center;
+    width: 65rem;
+
+}
+
+
+.container-p-criativo {
+    display: flex;
+    gap: 5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.conteudo-itens-p-criativo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-top: 3px solid #738F40;
+    border-left: 3px solid #738F40;
+    border-right: 3px solid #000000b2;
+    border-bottom: 3px solid #000000b2;
+    /* border: 3px outset #324e69; */
+    box-shadow: 10px 10px 5px #1414144f;
+    width: 20rem;
+    height: 22rem;
+    padding: 2rem;
+    color: white;
+    background-color: #353536;
+    border-radius: 10px;
+}
+
+
+.titulo-p-criativo h3 {
+    font-size: 1.9rem;
+    font-family: var(--Montserrat);
+    font-weight: 600;
+    color: white;
+    border-bottom: 1px solid #738F40;
+    width: 15rem;
+    padding-bottom: 7px;
+    margin-bottom: 1.7rem;
+    margin-top: 1.5rem;
+    
+}
+
+.paragrafo-p-criativo {
+    font-family: var(--Montserrat);
+    color: #dddddd;
+    /* border: 3px solid #324e69; */
+    width: 19rem;
+    height: 18rem;
+
+}
+
+.paragrafo-p-criativo p {
+    margin-bottom: 1rem;
+
+}
+
+/* 07  Depoimentos */
+#container-depoimentos {
+    display: flex;
+    flex-direction: column;
+    max-width: 100vw;
+    /* background-color: #cac8c827; */
+    margin-top: 7rem;
+    margin-bottom: 6.5rem;    
+}
+
+#container-depoimentos h2 {
+    font-family: var(--Lora);
+    font-size: 3.5rem;
+    color: var(--Azul-escuro);
+    text-align: center;
+    margin-top: 3rem ;
+    margin-bottom: 2rem ;
+}
+
+#geral-depoimentos {
+    display: flex;
+    justify-content: center;
+    gap: 4%;
+    flex-wrap: wrap;
+}
+
+.container-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem 0 ;
+    width: 27rem;
+    height: 30rem;
+    background-color: #dddddd4d;
+    margin: 2rem 0;
+    border-radius: 20px;
+    border-bottom: 1px solid var(--Verde-oliva);
+    box-shadow: 0px 150px 0px 0px var(--Verde-oliva) inset;
+}
+
+.container-cards .img-cars {
+    width: 150px;
+    height: 150px;
+    background-color: #353536;
+    border: 3px solid #738F40;
+    border-radius: 50%;
+    box-shadow:0px 0px 0px 7px white ;
+    background-position: center;
+
+}
+
+.img-cars img {
+    width: 150px;
+    height: 150px;
+    background-position: center;
+}
+
+.container-cards p, .container-cards h4 {
+    width: 22rem;
+    text-align: center;
+    /* border: 1px solid black;  */
+}
+
+.container-cards p {
+    font-family: var(--Montserrat);
+    color: #3f3f40;
+    height: 14rem;
+    display: flex;    
+    align-items: center;
+}
+
+.container-cards h4 {
+    font-family: var(--Raleway);
+    font-size: 1.5rem;
+    color: #001F3F;
+}
+
+
+/* 08 container-parcerias */
+#container-parcerias {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100vw;
+    background-color: #e0e0e03f;
+}
+
+#container-parcerias h2 {
+    font-family: var(--Raleway);
+    font-size: 3rem;
+    color: #001F3F;
+    margin-top: 4rem;
+    margin-bottom: 4.7rem;
+}
+
+#container-parcerias span {
+    font-size: 1.3rem;
+    font-family: var(--Montserrat);
+    font-weight: 500;
+    color: var(--Cinza-escuro);
+    margin-bottom: 4rem;
+}
+
+#container-parcerias .link-banda {
+    color: var(--Cinza-azulado);
+    font-weight: 700;
+}
+
+#container-parcerias .link-banda:hover {
+    color: #0e76a8;
+    border-bottom: 1px solid #0e76a8;
+    transition: 0.5s ease;
+}
+
+.largura-parcerias {
+    width: 22rem;
+}
+
+#container-cards-parceria {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4%;
+    width: 95%;
+    /* border: 1px solid #000050; */
+}
+
+.geral-cads-parcerias {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    height: 32rem;
+    margin-bottom: 2rem;
+}
+
+.cads-para-itens-parcerias {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 25.7rem;
+    /* border: 2px solid #0e76a8; */
+    background-color: white;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.315);  
+}
+
+.cads-para-itens-parcerias h3, 
+.cads-para-itens-parcerias p {
+    font-family: var(--Montserrat);
+    color: var(--Azul-escuro);
+}
+
+.cads-para-itens-parcerias h3 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-top: 1.7rem;
+}
+
+.cads-para-itens-parcerias p {
+    font-size: 1.2rem;   
+    font-weight: 400;
+    margin-top: 0.3rem;
+} 
+
+.img-parcerias {
+    height: 18rem;
+    width: 100%;
+    background-repeat: inherit;
+    background-position: 50% 25%;
+    background-size: cover;
+}
+
+.barney {
+    background-image:url(01-Imagens/08-Personagens/1-Barney-300x400.jpg);
+    background-position: 25% 25%;
+}
+.Robin {
+    background-image:url(01-Imagens/08-Personagens/2-Robin-300x400.jpg)
+}
+.Marshall {
+    background-image:url(01-Imagens/08-Personagens/3-Marshall-300x400.jpg)  
+}
+.Lilly {
+    background-image:url(01-Imagens/08-Personagens/4-Lilly-300x400.jpg)
+}
+.Lilly {
+    background-position: 50% 35%;
+}
+.img-parcerias img {
+    width: 100%;
+}
+
+
+/* icons */
+#container-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 2.5rem;
+}
+
+.links-icons {
+    display: flex;
+    justify-content: center;
+    width: 20rem;
+    gap: 20px;
+}
+
+.fa-brands {
+    font-size: 1.5rem;
+    color: var(--Azul-escuro);
+}
+
+.fa-instagram:hover {
+    color:  #ff3858;
+}
+.fa-x-twitter:hover {
+    color: black;
+}
+.fa-linkedin-in:hover {
+    color: #0e76a8 ;
+}
+.fa-pinterest-p:hover {
+    color: #c8232c ;
+}
+
+/* 9 Sobre Mim */
+#container-sobre-mim {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    gap: 4%;
+    max-width: 100vw;
+    /* border: 1px solid black; */
+    margin: 7rem 0 ;
+    align-items: center;
+    margin-top: 8rem;
+    margin-bottom: 4rem;
+}
+
+.txt-sobre-ted {
+    width: 50rem;
+    /* border: 1px solid black; */
+
+}
+
+.txt-sobre-ted h2{
+    font-family: var(--Raleway);
+    font-size: 4rem;
+    color: var(--Cinza-azulado);
+}
+
+.txt-sobre-ted h3 {
+    font-size: 1.2rem;
+    font-family: var(--Montserrat);
+    margin-bottom: 3.5rem;
+    color: var(--Azul-escuro);
+}
+
+.txt-sobre-ted span {
+    font-weight: 400;
+    color: var(--Cinza-escuro);
+}
+
+.txt-sobre-ted p {
+    font-family: var(--Montserrat);
+    color: var(--Cinza-escuro);
+    font-size: 1.2rem;
+    width: 40rem;
+    /* border: 1px solid black; */
+    margin-bottom: 1rem;
+}
+
+.img-sobre-ted {
+    background-image: url(01-Imagens/08-Personagens/Ted-300x400.jpg);
+    width: 40rem;
+    height: 40rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+/* 10 Contato */
+#container-form {
+    display: flex;
+    justify-content: space-around;
+    max-width: 100vw;
+    /* flex-wrap: wrap; */
+    height: 35rem;
+    background-color: var(--Cinza-azulado);
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+    padding: 1rem 7%;
+    align-items: center;
+    margin-top: 15rem;
+}
+
+#container-geral-infos {
+    width: 30rem;
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.container-infos {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    /* border: 1px solid #259dd9; */
+}
+
+
+.caixa-infos {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.caixa-infos h4 {
+    font-size: 2rem;
+    color: white;
+    margin-left: 2rem;
+    font-family: var(--Raleway);
+
+}
+
+.container-infos p {
+    font-size: 1.3rem;
+    color: #e7e7e7;
+    font-family: var(--Montserrat);
+}
+
+.fa-solid {
+    font-size: 2rem;
+    color: #0e76a8;
+    /* color: var(--Verde-oliva); */
+}
+
+
+/* lado direito */
+input, textarea {
+    border: none;
+}
+
+#box-form {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 0 1.7rem;
+    width: 33rem;
+    height: 43rem;
+    /* border: 1px solid rgba(0, 0, 0, 0.514); */
+    box-shadow:  0px 0px 5px #1313136b;
+}
+
+.form {
+    padding-left: 1rem;
+    width: 30rem;
+    /* border: 1px solid black; */
+}
+
+.form h3 {
+    font-family: var(--Raleway);
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: var(--Azul-escuro);
+    
+}
+
+.form input, .form textarea {
+    border-bottom: 3px solid var(--Cinza-azulado);
+}
+
+.form input {
+    display: block;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    font-family: var(--Montserrat);
+    
+}
+
+.form textarea {
+    /* border: 1px solid #00000034; */
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.562);
+    width: 27.5rem;
+    height: 10rem;
+    margin-bottom: 2rem;
+    
+}
+
+.form input[type="text"], .form input[type="email"] {
+    width: 27.5rem;
+    padding-bottom: 1rem ;
+    box-sizing: border-box;
+    margin-bottom: 2.5rem;
+}
+
+.form input[type="submit"] {
+    width: 8rem;
+    height: 4rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1.2rem;
+    border: 3px solid var(--Azul-escuro);
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: white;
+    cursor: pointer;
+
+}
+
+.form input[value="Enviar"] {
+    color: var(--Azul-escuro);
+}
+
+.form input[type="text"]:focus, .form input[type="email"]:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+    border-bottom: 3px solid var(--Verde-oliva);
+}
+
+.form textarea:focus {
+    outline: 0; 
+    border-bottom: 3px solid var(--Verde-oliva);
+}
+
+.form input[type="submit"]:hover {
+    color: #000000;
+    border: 3px solid var(--Verde-oliva);
+    transition: ease 0.7s;
+    
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100vw;
+    height: 5rem;
+    background-color: var(--Cinza-escuro);
+}
+
+footer h3 {
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 400;
+    font-family: var(--Montserrat);
+}
